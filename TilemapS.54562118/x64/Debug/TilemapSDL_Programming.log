@@ -1,0 +1,9 @@
+﻿  CollisionComponent.cpp
+C:\Users\User\01_Source\01_Repos\70_GameProgramming\03_TilemapSDL_Programming\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Player.cpp
+C:\Users\User\01_Source\01_Repos\70_GameProgramming\03_TilemapSDL_Programming\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+C:\Users\User\01_Source\11_SDL\SDL2_ttf-2.24.0\include\SDL_ttf.h(165,33): warning C4099: 'TTF_Font': 처음에는 'class'을(를) 사용하여 형식 이름을 표시했는데 이제는 'struct'을(를) 사용하여 표시합니다.
+C:\Users\User\01_Source\01_Repos\70_GameProgramming\03_TilemapSDL_Programming\Game.h(37,8): message : 'TTF_Font' 선언을 참조하십시오.
+C:\Users\User\01_Source\01_Repos\70_GameProgramming\03_TilemapSDL_Programming\Player.cpp(48,64): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+  코드를 생성하고 있습니다...
+  TilemapSDL_Programming.vcxproj -> C:\Users\User\01_Source\01_Repos\70_GameProgramming\03_TilemapSDL_Programming\x64\Debug\TilemapSDL_Programming.exe
