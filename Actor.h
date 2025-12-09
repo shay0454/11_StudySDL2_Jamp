@@ -21,6 +21,8 @@ class Actor {
 		void AddComponent(class Component* component);//컴포넌트 추가
 		void RemoveComponent(class Component* component);//컴포넌트 제거
 
+		void virtual OnCollision(Actor* other) {};//충돌시
+
 		void SetPosition(Vector2 position) { mPosition = position; }
 		Vector2 GetPosition() const { return mPosition; }
 

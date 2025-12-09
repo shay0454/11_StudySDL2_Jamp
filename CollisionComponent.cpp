@@ -1,6 +1,12 @@
 #include "CollisionComponent.h"
 
-CollisionComponent::CollisionComponent(Actor *owner) : Component(owner),mWidth(0),mHeight(0){}
+CollisionComponent::CollisionComponent(Actor *owner) : Component(owner),mWidth(0),mHeight(0){
+	owner->GetGame()->AddCollider(this);
+}
+
+CollisionComponent::~CollisionComponent(){
+	mOwner->GetGame()->RemoveCollider(this);
+}
 
 bool CollisionComponent::Intersect(const CollisionComponent* other) const{
 	Vector2 aPos = mOwner->GetPosition();
@@ -23,9 +29,3 @@ bool CollisionComponent::Intersect(const CollisionComponent* other) const{
 
 	return true;
 }
-
-//void CheckHit() {
-//	if(Intersect())
-//	mTextComp->SetText("Hit");
-//
-//}

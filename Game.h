@@ -31,8 +31,13 @@ public:
 	void AddSprite(class SpriteComponent* component); // 스프라이트 추가
 	void RemoveSprite(class SpriteComponent* component); // 스프라이트 제거
 
+	void AddCollider(class CollisionComponent* component);
+	void RemoveCollider(class CollisionComponent* component);
+
 	void AddText(class TextComponent* text);
 	void RemoveText(class TextComponent* text);
+
+	void CheckCollision(); // 충돌 처리
 
 	class TTF_Font* GetFont() const { return mFont; } // 포트 리턴
 
@@ -59,6 +64,7 @@ private:
 
 	// 갱신 및 로직
 	vector<class SpriteComponent*> mSprites; // 스프라이트 집합체
+	vector<class CollisionComponent*> mColliders; // 충돌 컴포넌트 집합체
 	vector<class TextComponent*> mTexts;
 
 	Uint32 mTicksCount; // 틱 카운터

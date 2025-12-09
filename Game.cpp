@@ -9,6 +9,7 @@
 #include "BGSpriteComponent.h"
 #include "TextComponent.h"
 #include "Player.h"
+#include <algorithm>
 using namespace std;
 
 //초기화
@@ -108,7 +109,22 @@ void Game::AddSprite(SpriteComponent* sprite) {
 //스프라이트 제거
 void Game::RemoveSprite(SpriteComponent* sprite) {
 	auto iter = find(mSprites.begin(), mSprites.end(), sprite);
-	mSprites.erase(iter);
+	if (iter != mSprites.end()) {
+		mSprites.erase(iter);
+	}
+}
+
+//충돌 컴포넌트 추가
+void Game::AddCollider(CollisionComponent* collider) {
+	mColliders.emplace_back(collider);
+}
+
+//충돌 컴포넌트 제거
+void Game::RemoveCollider(CollisionComponent* collider) {
+	auto iter = find(mColliders.begin(), mColliders.end(), collider);
+	if (iter != mColliders.end()) {
+		mColliders.erase(iter);
+	}
 }
 
 //텍스트 삽입
@@ -121,6 +137,19 @@ void Game::RemoveText(TextComponent* text) {
 	auto iter = find(mTexts.begin(), mTexts.end(), text);
 	if (iter != mTexts.end()) {
 		mTexts.erase(iter);
+	}
+}
+
+void Game::CheckCollision() {
+	for (size_t i = 0; i < mColliders.size(); ++i) {
+		for (size_t j = i + 1; j < mColliders.size(); ++j) {
+			CollisionComponent* c1 = mColliders[i];
+			CollisionComponent* c2 = mColliders[j];
+			if (c1->Intersect(c2)) {
+				c1->GetOwner()->OnCollision(c2->GetOwner());
+				c2->GetOwner()->OnCollision(c1->GetOwner());
+			}
+		}
 	}
 }
 
@@ -190,6 +219,8 @@ void Game::UpdateGame() {
 		mActors.emplace_back(pending);
 	}
 	mPendingActors.clear();
+
+
 
 	//액터 죽음 확인
 	vector<Actor*> deadActor;

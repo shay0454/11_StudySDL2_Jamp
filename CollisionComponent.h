@@ -2,9 +2,10 @@
 #define COLLISIONCOMPONENT_H
 #include "Component.h"
 
-class CollisionComponent : Component {
+class CollisionComponent : public Component {
 	public:
 		CollisionComponent(class Actor* owner);
+		~CollisionComponent();
 
 		void SetSize(float w, float h) { mWidth = w, mHeight = h; }
 		bool Intersect(const CollisionComponent* other) const;

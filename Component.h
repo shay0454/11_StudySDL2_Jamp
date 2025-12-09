@@ -9,6 +9,7 @@ using namespace std;
 class Component {
 public:
 	Component(class Actor* owner, int updateOrder = 100);
+	Actor* GetOwner() const { return mOwner; }
 	virtual ~Component();
 	virtual void Update(float deltaTime);//업데이트
 	virtual void Draw(SDL_Renderer* renderer);//Draw
