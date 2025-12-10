@@ -8,7 +8,9 @@
 #include "SpriteComponent.h"
 #include "BGSpriteComponent.h"
 #include "TextComponent.h"
+#include "CollisionComponent.h"
 #include "Player.h"
+#include "Ground.h"
 #include <algorithm>
 using namespace std;
 
@@ -220,7 +222,7 @@ void Game::UpdateGame() {
 	}
 	mPendingActors.clear();
 
-
+	CheckCollision();
 
 	//액터 죽음 확인
 	vector<Actor*> deadActor;
@@ -258,6 +260,10 @@ void Game::LoadData(){
 	mPlayer = new Player(this);
 	mPlayer->SetPosition(Vector2(0,500));
 	mPlayer->SetScale(1.0f);
+
+	mGrounds.push_back(new Ground(this));
+	mGrounds[0]->SetPosition(Vector2(400.0f, 704.0f));
+
 	Actor* temp = new Actor(this);
 	temp->SetPosition(Vector2(512.f, 384.0f));
 	BGSpriteComponent* bg = new BGSpriteComponent(temp);

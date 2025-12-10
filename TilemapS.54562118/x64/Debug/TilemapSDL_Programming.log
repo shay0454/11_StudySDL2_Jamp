@@ -1,117 +1,4 @@
-﻿  Actor.cpp
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Actor.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  (소스 파일 'Actor.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Actor.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Actor.cpp'을(를) 컴파일하는 중)
-  
-  AnimSpriteComponent.cpp
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\AnimSpriteComponent.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\AnimSpriteComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'AnimSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\SpriteComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'AnimSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'AnimSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'AnimSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  (소스 파일 'AnimSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'AnimSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-  BGSpriteComponent.cpp
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\BGSpriteComponent.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\BGSpriteComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'BGSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\SpriteComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'BGSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'BGSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'BGSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  (소스 파일 'BGSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'BGSpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-  CollisionComponent.cpp
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'CollisionComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'CollisionComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  (소스 파일 'CollisionComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'CollisionComponent.cpp'을(를) 컴파일하는 중)
-  
-  Component.cpp
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Component.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Component.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  (소스 파일 'Component.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Component.cpp'을(를) 컴파일하는 중)
-  
-  Game.cpp
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(37,8): warning C4099: 'TTF_Font': 처음에는 'struct'을(를) 사용하여 형식 이름을 표시했는데 이제는 'class'을(를) 사용하여 표시합니다.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
-      D:\03_Libs\01_SDL\SDL2_ttf-2.24.0\include\SDL_ttf.h(165,16):
-      'TTF_Font' 선언을 참조하십시오.
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\SpriteComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\BGSpriteComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\TextComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Game.cpp'을(를) 컴파일하는 중)
-  
-  main.cpp
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
-  
-  Player.cpp
+﻿  Player.cpp
 D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Player.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
@@ -122,16 +9,8 @@ D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(6,10):
 D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
   
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\TextComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(42,34): warning C4244: 'return': 'const Actor::Type'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
-  
-D:\03_Libs\01_SDL\SDL2_ttf-2.24.0\include\SDL_ttf.h(165,16): warning C4099: 'TTF_Font': 처음에는 'class'을(를) 사용하여 형식 이름을 표시했는데 이제는 'struct'을(를) 사용하여 표시합니다.
-  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
-      D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(37,8):
-      'TTF_Font' 선언을 참조하십시오.
   
 D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\AnimSpriteComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
@@ -139,45 +18,22 @@ D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\AnimSpriteComp
 D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\SpriteComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
   
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Player.cpp(48,57): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-  SpriteComponent.cpp
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\SpriteComponent.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\SpriteComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'SpriteComponent.cpp'을(를) 컴파일하는 중)
-  
 D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'SpriteComponent.cpp'을(를) 컴파일하는 중)
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
   
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'SpriteComponent.cpp'을(를) 컴파일하는 중)
+D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\SpriteComponent.h(15,48): warning C4244: 'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
   
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  (소스 파일 'SpriteComponent.cpp'을(를) 컴파일하는 중)
+D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\SpriteComponent.h(17,46): warning C4244: 'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
   
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'SpriteComponent.cpp'을(를) 컴파일하는 중)
-  
-  TextComponent.cpp
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\TextComponent.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\TextComponent.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'TextComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Component.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'TextComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'TextComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Actor.h(6,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  (소스 파일 'TextComponent.cpp'을(를) 컴파일하는 중)
-  
-D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  (소스 파일 'TextComponent.cpp'을(를) 컴파일하는 중)
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
   
 D:\03_Libs\01_SDL\SDL2_ttf-2.24.0\include\SDL_ttf.h(165,16): warning C4099: 'TTF_Font': 처음에는 'class'을(를) 사용하여 형식 이름을 표시했는데 이제는 'struct'을(를) 사용하여 표시합니다.
-  (소스 파일 'TextComponent.cpp'을(를) 컴파일하는 중)
-      D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(37,8):
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+      D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Game.h(42,8):
       'TTF_Font' 선언을 참조하십시오.
   
-  코드를 생성하고 있습니다...
+D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\Player.cpp(58,57): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
   TilemapSDL_Programming.vcxproj -> D:\02_Repo\70_GameProgramming\03_StudySDL2_Jamp\11_StudySDL2_Jamp\x64\Debug\TilemapSDL_Programming.exe

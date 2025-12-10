@@ -2,7 +2,8 @@
 #include "Game.h"
 #include "AnimSpriteComponent.h"
 #include "TextComponent.h"
-
+#include "CollisionComponent.h"
+#include "Ground.h"
 Player::Player(Game *game) : Actor(game),mRightSpeed(0),mDownSpeed(0) {
 	mAnim = new AnimSpriteComponent(this);
 	//텍스처의 일부만 랜더링하기 위한 부분 설정
@@ -37,14 +38,23 @@ Player::Player(Game *game) : Actor(game),mRightSpeed(0),mDownSpeed(0) {
 
 	mCollision = new CollisionComponent(this);
 	mCollision->SetSize(PlayerWidth, PlayerHeight);
+
+	SetType(PlayerType);
+
+	mPrevY = 0;
 }
 
 //액터 업데이트
 void Player::UpdateActor(float deltaTime) {
 	Actor::UpdateActor(deltaTime);
 	Vector2 pos = GetPosition();
+
+	mPrevY = pos.y;
+
 	pos.x += mRightSpeed * deltaTime;
 	pos.y += mDownSpeed * deltaTime;
+
+
 	if(pos.y<screen_height - PlayerHeight/2) mDownSpeed += Gravity;
 
 	if (pos.x < PlayerWidth/2) { pos.x = PlayerWidth/2; }
@@ -55,7 +65,6 @@ void Player::UpdateActor(float deltaTime) {
 	}
 
 	SetPosition(pos);
-
 	mTextComp->SetText(to_string(GetPosition().x) + ", " + to_string(GetPosition().y));
 }
 
@@ -93,5 +102,23 @@ void Player::ProcessKeyBoard(const uint8_t* state) {
 		mAnim->SetAnimeTextures(mAnimations[newState]);
 		if (newState == Move) mAnim->SetAnimFPS(12);
 		else mAnim->SetAnimFPS(24);
+	}
+}
+
+void Player::OnCollision(Actor* other) {
+	if (other->GetType() == GroundType) {
+		float playerBottom = GetPosition().y + PlayerHeight / 2;
+		float groundTop = other->GetPosition().y - other->GetScale()*GroundHeight / 2;
+		float preplayerBottom = mPrevY + PlayerHeight / 2;
+
+		//위에서 충돌
+		if (preplayerBottom <= groundTop && playerBottom >= groundTop)
+		{
+			Vector2 pos = GetPosition();
+			pos.y = other->GetPosition().y - (PlayerHeight / 2 + other->GetScale() * GroundHeight / 2);
+			SetPosition(pos);
+			mDownSpeed = 0;
+			mIsJampping = false;
+		}	
 	}
 }

@@ -12,6 +12,9 @@ class Actor {
 		enum State {
 			EActive, EPaused, EDead
 		};
+		enum Type {
+			PlayerType, EnemyType, BulletType, GroundType
+		};
 		Actor(class Game* game);
 		virtual ~Actor();
 		void Update(float deltaTime);// 업데이트
@@ -35,6 +38,9 @@ class Actor {
 		void SetRotation(float rotation) { mRotation = rotation; }
 		float GetRotation() const { return mRotation; }
 
+		void SetType(Type type) { mType = type; }
+		float GetType() const { return mType; }
+
 		class Game* GetGame() const { return mGame; }
 
 	private:
@@ -42,7 +48,7 @@ class Actor {
 		Vector2 mPosition;
 		float mScale;
 		float mRotation;
-
+		Type mType;
 		vector<class Component*> mComponents;
 		class Game* mGame;
 };

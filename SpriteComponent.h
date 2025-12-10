@@ -12,9 +12,9 @@ class SpriteComponent : public Component {
 
 		int GetDrawOrder() const { return mDrawOrder; }
 		void SetTexHeight(int height) { mTexHeight = height;}
-		int GetTexHeight() const { return mTexHeight; }
+		int GetTexHeight() const { return mTexHeight * mOwner->GetScale(); }
 		void SetTexWidth(int width) { mTexWidth = width; }
-		int GetTexWidth() const { return mTexWidth; }
+		int GetTexWidth() const { return mTexWidth * mOwner->GetScale(); }
 
 		void SetFlip(SDL_RendererFlip flip) { mFlip = flip; }
 

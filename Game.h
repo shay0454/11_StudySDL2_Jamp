@@ -71,6 +71,7 @@ private:
 	bool mIsRunning; // 루프 가능 유무
 	bool mUpdateActors; // 액터 업데이트 가능 유무
 
+	vector<class Ground*> mGrounds; // 땅 액터 집합체
 	class Player* mPlayer; // 플레이 액터
 };
 
