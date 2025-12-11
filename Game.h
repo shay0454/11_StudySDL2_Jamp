@@ -30,7 +30,7 @@ public:
 
 	void AddSprite(class SpriteComponent* component); // 스프라이트 추가
 	void RemoveSprite(class SpriteComponent* component); // 스프라이트 제거
-
+	void ReorderSprite(class SpriteComponent* component); // 스프라이트 재정렬
 	void AddCollider(class CollisionComponent* component);
 	void RemoveCollider(class CollisionComponent* component);
 

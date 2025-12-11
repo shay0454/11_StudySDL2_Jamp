@@ -31,6 +31,11 @@ void SpriteComponent::Draw(SDL_Renderer* renderer) {
 	}
 }
 
+void SpriteComponent::SetDrawOrder(int drawOrder) {
+	mDrawOrder = drawOrder;
+	mOwner->GetGame()->ReorderSprite(this);
+}
+
 //텍스처 설정
 void SpriteComponent::SetTexture(SDL_Texture* texture) {
 	mTexture = texture;

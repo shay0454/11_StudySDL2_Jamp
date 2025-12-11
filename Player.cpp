@@ -17,9 +17,9 @@ Player::Player(Game *game) : Actor(game),mRightSpeed(0),mDownSpeed(0) {
 		game->GetTexture("Assets/Character03.png"),
 		game->GetTexture("Assets/Character04.png"),
 		game->GetTexture("Assets/Character05.png"),
-		game->GetTexture("Assets/Character06.png"),
 	};
 	mAnimations[Jamp] = {
+		game->GetTexture("Assets/Character06.png"),
 		game->GetTexture("Assets/Character07.png"),
 		game->GetTexture("Assets/Character08.png"),
 		game->GetTexture("Assets/Character09.png"),
@@ -39,7 +39,7 @@ Player::Player(Game *game) : Actor(game),mRightSpeed(0),mDownSpeed(0) {
 	mCollision = new CollisionComponent(this);
 	mCollision->SetSize(PlayerWidth, PlayerHeight);
 
-	SetType(PlayerType);
+	SetType(Type::Player);
 
 	mPrevY = 0;
 }
@@ -106,7 +106,7 @@ void Player::ProcessKeyBoard(const uint8_t* state) {
 }
 
 void Player::OnCollision(Actor* other) {
-	if (other->GetType() == GroundType) {
+	if (other->GetType() == Type::Ground ) {
 		float playerBottom = GetPosition().y + PlayerHeight / 2;
 		float groundTop = other->GetPosition().y - other->GetScale()*GroundHeight / 2;
 		float preplayerBottom = mPrevY + PlayerHeight / 2;

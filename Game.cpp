@@ -116,6 +116,13 @@ void Game::RemoveSprite(SpriteComponent* sprite) {
 	}
 }
 
+void Game::ReorderSprite(SpriteComponent* sprite) {
+	sort(mSprites.begin(), mSprites.end(),
+		[](SpriteComponent* a, SpriteComponent* b) {
+			return a->GetDrawOrder() < b->GetDrawOrder();
+		});
+}
+
 //충돌 컴포넌트 추가
 void Game::AddCollider(CollisionComponent* collider) {
 	mColliders.emplace_back(collider);
@@ -258,11 +265,16 @@ void Game::GenerateOutput() {
 //사용 데이터 로드
 void Game::LoadData(){
 	mPlayer = new Player(this);
-	mPlayer->SetPosition(Vector2(0,500));
+	mPlayer->SetPosition(Vector2(0,200));
 	mPlayer->SetScale(1.0f);
 
+	for (int i = 0; i < 11; i++) {
+		mGrounds.push_back(new Ground(this));
+		mGrounds[i]->SetGroundType(Ground::TheGround);
+		mGrounds[i]->SetPosition(Vector2(96.0f*i+48, 704.0f+32.0f));
+	}
 	mGrounds.push_back(new Ground(this));
-	mGrounds[0]->SetPosition(Vector2(400.0f, 704.0f));
+	mGrounds[11]->SetPosition(Vector2(512.0f,704.0f-64.0f));
 
 	Actor* temp = new Actor(this);
 	temp->SetPosition(Vector2(512.f, 384.0f));

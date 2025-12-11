@@ -9,7 +9,7 @@ class SpriteComponent : public Component {
 		~SpriteComponent();
 		virtual void Draw(SDL_Renderer* renderer);//Draw
 		virtual void SetTexture(SDL_Texture* texture);//텍스처 설정
-
+		void SetDrawOrder(int drawOrder);
 		int GetDrawOrder() const { return mDrawOrder; }
 		void SetTexHeight(int height) { mTexHeight = height;}
 		int GetTexHeight() const { return mTexHeight * mOwner->GetScale(); }
