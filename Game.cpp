@@ -274,7 +274,12 @@ void Game::LoadData(){
 		mGrounds[i]->SetPosition(Vector2(96.0f*i+48, 704.0f+32.0f));
 	}
 	mGrounds.push_back(new Ground(this));
-	mGrounds[11]->SetPosition(Vector2(512.0f,704.0f-64.0f));
+	mGrounds[11]->SetPosition(Vector2(512.0f,704.0f-128.0f));
+	mGrounds.push_back(new Ground(this));
+	mGrounds[12]->SetGroundType(Ground::FloatingBlock);
+	mGrounds[12]->SetPosition(Vector2(512.f, 704.f - 64.f));
+	mGrounds.push_back(new Ground(this));
+	mGrounds[13]->SetPosition(Vector2(400.0f, 704.0f - 64.0f));
 
 	Actor* temp = new Actor(this);
 	temp->SetPosition(Vector2(512.f, 384.0f));

@@ -39,7 +39,7 @@ Player::Player(Game *game) : Actor(game),mRightSpeed(0),mDownSpeed(0) {
 	mCollision = new CollisionComponent(this);
 	mCollision->SetSize(PlayerWidth, PlayerHeight);
 
-	SetType(Type::Player);
+	SetType(Type::EPlayer);
 
 	mPrevY = 0;
 }
@@ -106,7 +106,13 @@ void Player::ProcessKeyBoard(const uint8_t* state) {
 }
 
 void Player::OnCollision(Actor* other) {
-	if (other->GetType() == Type::Ground ) {
+	if (other->GetType() == Type::EGround) {
+		Ground* ground = dynamic_cast<Ground*>(other);
+		if (!ground) return;
+		//Platform일 경우 올라갈 수 없음
+		if (ground->GetGroundType() == Ground::FloatingBlock) return;
+
+
 		float playerBottom = GetPosition().y + PlayerHeight / 2;
 		float groundTop = other->GetPosition().y - other->GetScale()*GroundHeight / 2;
 		float preplayerBottom = mPrevY + PlayerHeight / 2;

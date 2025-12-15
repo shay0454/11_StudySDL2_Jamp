@@ -12,9 +12,8 @@ Ground::Ground(class Game* game)
 	mTextComp->SetColor({ 255,255,255,255 });
 	mCollision = new CollisionComponent(this);
 	SetGroundType();
-	SetType(Type::Ground);
+	SetType(Type::EGround);
 	SetScale(1.5);
-	mGroundType = Platform;
 }
 
 void Ground::UpdateActor(float deltaTime) {
@@ -23,24 +22,32 @@ void Ground::UpdateActor(float deltaTime) {
 }
 
 void Ground::OnCollision(Actor* other) {
-	if (other->GetType() == Type::Player) {
+	if (other->GetType() == Type::EPlayer) {
 		mTextComp->SetText("Hit");
 	}
 }
 
 void Ground::SetGroundType(GroundType isGround) {
 	mGroundType = isGround;
-	if (isGround == GroundType::TheGround) {
-		mAnim->SetSourceRect({ 64,32,96,64 });
-		mAnim->SetTexWidth(96);
-		mAnim->SetTexHeight(64);
-		mCollision->SetSize(96, 64);
-	}
-	else {
-		mAnim->SetSourceRect({ 32,32,160,64 });
-		mAnim->SetTexWidth(160);
-		mAnim->SetTexHeight(64);
-		mCollision->SetSize(160, 64);
+	switch (isGround) {
+		case TheGround:
+			mAnim->SetSourceRect({ 64,32,96,64 });
+			mAnim->SetTexWidth(96);
+			mAnim->SetTexHeight(64);
+			mCollision->SetSize(96, 64);
+			return;
+		case Platform:
+			mAnim->SetSourceRect({ 32,32,160,64 });
+			mAnim->SetTexWidth(160);
+			mAnim->SetTexHeight(64);
+			mCollision->SetSize(160, 64);
+			return;
+		case FloatingBlock:
+			mAnim->SetSourceRect({ 64,64,96,64 });
+			mAnim->SetTexHeight(96);
+			mAnim->SetTexHeight(64);
+			mCollision->SetSize(96, 64);
+			return;
 	}
 }
 

@@ -13,7 +13,7 @@ class Actor {
 			EActive, EPaused, EDead
 		};
 		enum Type {
-			Player, Enemy, Bullet, Ground
+			EPlayer, EEnemy, EBullet, EGround
 		};
 		Actor(class Game* game);
 		virtual ~Actor();
