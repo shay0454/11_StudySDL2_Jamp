@@ -20,6 +20,7 @@ class Player : public Actor {
 		class TextComponent* mTextComp;
 
 		bool mIsJampping;
+		bool mIsFalling;
 		PlayerState mCurrentState,newState;
 		class AnimSpriteComponent* mAnim;
 		unordered_map<int, vector<SDL_Texture*>> mAnimations;

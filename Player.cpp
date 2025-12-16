@@ -53,19 +53,21 @@ void Player::UpdateActor(float deltaTime) {
 
 	pos.x += mRightSpeed * deltaTime;
 	pos.y += mDownSpeed * deltaTime;
-
-
+	if (mDownSpeed == 0) mIsFalling = false;
+	else { mIsFalling = true; }
 	if(pos.y<screen_height - PlayerHeight/2) mDownSpeed += Gravity;
 
 	if (pos.x < PlayerWidth/2) { pos.x = PlayerWidth/2; }
 	else if (pos.x > screen_width) { pos.x = screen_width; }
 	if (pos.y < PlayerHeight/2) { pos.y = PlayerHeight/2; }
-	else if (pos.y > screen_height - PlayerHeight/2) { pos.y = screen_height - PlayerHeight/2;
-	mIsJampping = false;
+	else if (pos.y > screen_height - PlayerHeight/2) { 
+		pos.y = screen_height - PlayerHeight/2;
+		mIsJampping = false;
 	}
 
 	SetPosition(pos);
 	mTextComp->SetText(to_string(GetPosition().x) + ", " + to_string(GetPosition().y));
+	mTextComp->SetText((mIsFalling?"True":"False"));
 }
 
 void Player::ProcessKeyBoard(const uint8_t* state) {
@@ -86,7 +88,7 @@ void Player::ProcessKeyBoard(const uint8_t* state) {
 		newState = Idle;
 	}
 
-	if (state[SDL_SCANCODE_SPACE] && !mIsJampping) {
+	if (state[SDL_SCANCODE_SPACE] && !mIsJampping && !mIsFalling) {
 		mDownSpeed = -400.f;
 		newState = Jamp;	
 		mIsJampping = true;
