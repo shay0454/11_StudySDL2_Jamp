@@ -21,7 +21,7 @@ using namespace std;
 class Game {
 public:
 	Game() {};
-	bool Initialzie(); // 초기화
+	bool Initialize(); // 초기화
 	void RunLoop(); // 게임 루프
 	void Shutdown(); // 게임 종료
 

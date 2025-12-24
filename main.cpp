@@ -5,7 +5,7 @@
 
 int main(int argc, char** argv) {
 	Game game;
-	bool success = game.Initialzie();
+	bool success = game.Initialize();
 	if (success) {
 		game.RunLoop();
 	}

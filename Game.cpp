@@ -15,7 +15,7 @@
 using namespace std;
 
 //초기화
-bool Game::Initialzie() {
+bool Game::Initialize() {
 	// SDL 초기화 및 생성
 	int sdlResult = SDL_Init(SDL_INIT_VIDEO); 
 	if (sdlResult != 0) { SDL_Log("Unable to initialize SL : %s", SDL_GetError()); }
@@ -280,6 +280,7 @@ void Game::LoadData(){
 	mGrounds[12]->SetPosition(Vector2(512.f, 704.f - 64.f));
 	mGrounds.push_back(new Ground(this));
 	mGrounds[13]->SetPosition(Vector2(400.0f, 704.0f - 64.0f));
+	
 
 	Actor* temp = new Actor(this);
 	temp->SetPosition(Vector2(512.f, 384.0f));
